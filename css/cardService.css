@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================= Cards Portafolio de servicios ==================================== */
+.container
+{
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box
+{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+
+.box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 124.9%;
+    height: 100%;
+    
+}
+
+.box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .imgBx img
+{
+    opacity: 0.8;
+}
+
+.box .content
+{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+.box:hover .content
+{
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    border-radius: 3%;
+}
+
+.box .content h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    z-index: 3;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+}
+
+.box:hover .content h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    z-index: 3;
+    color: #000;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicios{
+    min-height: 100vh;
+    margin-top: 10%;
+    overflow-x: hidden;
+}
+
+.suministros{
+    min-height: 100vh;
+    /* margin-top: 10%; */
+}
